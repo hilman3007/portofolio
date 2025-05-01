@@ -171,6 +171,7 @@ nav ul li a:hover {
         width: 100%; /* Profile box lebih kecil */
         height: auto; /* Menyesuaikan tinggi */
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .foto-box {
@@ -198,8 +199,4 @@ nav ul li a:hover {
     .foto-box img{
         margin-top: 50px;
     }
-}
-
-hr{
-    width: 20%;
 }
