@@ -38,7 +38,8 @@
         </div>
 
         <div class="content2">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hilman300707@email.com"><img src="Media/gmail.png" alt=""></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hilman300707@email.com" target="_blank"><img
+                    src="Media/gmail.png" alt=""></a>
             <p>hilman300707@gmail.com</p>
         </div>
 
@@ -55,6 +56,17 @@
 
         hamburger.addEventListener('click', () => {
             navList.classList.toggle('show'); // Menambahkan atau menghapus kelas 'show' untuk menampilkan menu
+        });
+
+        // On Scrolled Header
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
         });
     </script>
 </body>

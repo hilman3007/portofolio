@@ -19,7 +19,8 @@ body {
 
 header {
     top: 0;
-    position: relative;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,6 +28,10 @@ header {
     gap: 70%;
     color: whitesmoke;
     padding: 6px 15px;
+}
+
+header.scrolled{
+    background-color: #222;
 }
 
 nav ul {

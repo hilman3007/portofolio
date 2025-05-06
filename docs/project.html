@@ -10,25 +10,25 @@
 </head>
 
 <body>
-        <!-- Header -->
-        <div class="header-container">
-            <header>
-                <h3 class="text-title">Portofolio</h3>
-                <nav>
-                    <ul class="nav-list" id="nav-list">
-                        <li><a href="index.html">Profile</a></li>
-                        <li><a href="project.html">Project</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                    <div class="hamburger" id="hamburger-menu">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                </nav>
-            </header>
-        </div>
-        <!-- Header End -->
+    <!-- Header -->
+    <div class="header-container">
+        <header id="header">
+            <h3 class="text-title">Portofolio</h3>
+            <nav>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- Header End -->
 
     <!-- Body -->
     <h1 class="text-title2" style="font-size: 38px;">My Project & My Training</h1>
@@ -105,11 +105,12 @@
             <img src="Media/Digitalent - Data Analytics-1.png" alt="">
             <div class="content5-text">
                 <p>Pada tanggal <strong>30-31 Juli 2024</strong>, saya menyelesaikan pelatihan <strong>Data Analytics
-                    untuk Siswa SMA/Sederajat</strong> melalui program <strong>Digital Talent Scholarship
-                    2024</strong> yang diselenggarakan oleh <strong>Kementerian Kominfo</strong> dan
+                        untuk Siswa SMA/Sederajat</strong> melalui program <strong>Digital Talent Scholarship
+                        2024</strong> yang diselenggarakan oleh <strong>Kementerian Kominfo</strong> dan
                     <strong>Puslitbang SDP3I</strong>. Pelatihan ini berlangsung selama <strong>18 jam</strong> dan
                     membekali saya dengan dasar-dasar analisis data, pengolahan data menggunakan spreadsheet, serta
-                    visualisasi data untuk pengambilan keputusan.</p>
+                    visualisasi data untuk pengambilan keputusan.
+                </p>
 
                 <p>Pelatihan ini melengkapi pemahaman saya dalam mengelola data secara efisien, yang sangat berguna
                     untuk pengembangan aplikasi berbasis database dan pelaporan data secara visual.</p>
@@ -131,11 +132,23 @@
     <!-- Footer End -->
 
     <script>
+        // Android Header
         const hamburger = document.getElementById('hamburger-menu');
         const navList = document.getElementById('nav-list');
-    
+
         hamburger.addEventListener('click', () => {
             navList.classList.toggle('show'); // Menambahkan atau menghapus kelas 'show' untuk menampilkan menu
+        });
+
+        // On Scrolled Header
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
         });
     </script>
 </body>
